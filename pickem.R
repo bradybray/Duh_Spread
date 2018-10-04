@@ -23,21 +23,37 @@ matchup <-  function(data = df, team = team) {
 teams <- unique(df$away)
 
 league.summary <-lapply(teams, function(x) {
+  #Home Results
   home <- df[df$home == x,]
+  #Away results
   away <- df[df$away == x,]
+  #Losses at home
   loss.h <- dim(home[home$pts2 < home$pts1,])[1]
+  #Losses away
   loss.a <- dim(away[away$pts1 < away$pts2,])[1]
+  #Losses at home after the spread
   loss.h.ats <- dim(home[home$pts2ats < home$pts1,])[1]
+  #Losses away after the spread
   loss.a.ats <- dim(away[away$pts1ats < away$pts2,])[1]
+  #Games played
   games <- tail(df, n = 1)$week
+  #Points For
   pf <- sum(home$pts2) + sum(away$pts1)
+  #Points Against
   pa <- sum(home$pts1) + sum(away$pts2)
+  #Points for after the spread
   pfats <- sum(home$pts2ats) + sum(away$pts1ats)
+  #Points against after the spread
   paats <- sum(home$pts1ats) + sum(away$pts2ats)
+  #Point differential after the spread
   atsdiff <- pfats - paats
+  #Average points given/taken by ESPN
   avgspread = round((sum(home$spread2) + sum(away$spread1))/games, digits=3)
+  #Win loss ratio
   w.a <- paste(games-(loss.h + loss.a),'-',(loss.h+loss.a))
+  #win loss ratio after the spread.
   w.a.ats <- paste(games-(loss.h.ats + loss.a.ats),'-',(loss.h.ats+loss.a.ats))
+  #Margin of victory
   mov <- as.numeric(sum((away$pts1 - away$pts2) + (home$pts2 - home$pts1))/games)
   c(team = x, record = w.a, record.ats = w.a.ats, points.for = pf,points.against=pa,
     point.diff =pf-pa, pfats = pfats, paats = paats, avgspread = avgspread,atsdiff = atsdiff,
