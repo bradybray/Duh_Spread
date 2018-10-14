@@ -53,7 +53,7 @@
 4,"Buccaneers","Bears",2.5,-2.5,"Buccaneers",10,48,12.5,45.5,33,38
 4,"Lions","Cowboys",2.5,-2.5,"Lions",24,26,26.5,23.5,3,2
 4,"Eagles","Titans",-3.5,3.5,"Titans",23,26,19.5,29.5,10,3
-4,"Texans","Colts",0.5,-0.5,"Colts",34,37,34.5,36.5,2,3
+4,"Texans","Colts",0.5,-0.5,"Colts",37,34,37.5,33.5,4,3
 4,"Dolphins","Patriots",6.5,-6.5,"Dolphins",7,38,13.5,31.5,18,31
 4,"Jets","Jaguars",7.5,-7.5,"Jets",12,31,19.5,23.5,4,19
 4,"Browns","Raiders",2.5,-2.5,"Browns",42,45,44.5,42.5,2,3
@@ -62,3 +62,18 @@
 4,"Niners","Chargers",10.5,-10.5,"Chargers",27,29,37.5,18.5,19,2
 4,"Ravens","Steelers",3.5,-3.5,"Ravens",26,14,29.5,10.5,19,12
 4,"Chiefs","Broncos",-5.5,5.5,"Chiefs",27,23,21.5,28.5,7,4
+4,"Colts","Patriots",10.5,-10.5,"Patriots",24,38,34.5,27.5,7,14
+4,"Falcons","Steelers",3.5,-3.5,"Falcons",17,41,20.5,37.5,17,24
+4,"Titans","Bills",-3.5,3.5,"Titans",12,13,8.5,16.5,8,1
+4,"Dolphins","Bengals",6.5,-6.5,"Bengals",17,27,23.5,20.5,3,10
+5,"Ravens","Browns",-2.5,2.5,"Ravens",9,12,6.5,14.5,8,3
+5,"Broncos","Jets",0.5,-0.5,"Jets",16,34,16.5,33.5,17,18
+5,"Packers","Lions",-1.5,1.5,"Lions",23,31,21.5,32.5,11,8
+5,"Jaguars","Chiefs",3.5,-3.5,"Chiefs",14,30,17.5,26.5,9,16
+5,"Giants","Panthers",6.5,-6.5,"Giants",31,33,37.5,26.5,11,2
+5,"Raiders","Chargers",5.5,-5.5,"Raiders",10,26,15.5,20.5,5,16
+5,"Rams","Seahawks",-7.5,7.5,"Seahawks",33,31,25.5,38.5,13,2
+5,"Vikings","Eagles",3.5,-3.5,"Eagles",23,21,26.5,17.5,9,2
+5,"Cardinals","Niners",4.5,-4.5,"Niners",28,18,32.5,13.5,19,10
+5,"Cowboys","Texans",3.5,-3.5,"Cowboys",16,19,19.5,15.5,4,3
+5,"Redskins","Saints",6.5,-6.5,"Redskins",19,43,25.5,36.5,11,24
